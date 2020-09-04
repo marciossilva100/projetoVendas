@@ -33,7 +33,7 @@ class vendasController extends Controller
                 $nome[] = $value->nome;
                 $email[] = $value->email;
                 $valor_venda[] = $value->valor_venda;
-                $data[] = $value->created_at;
+                $data[] = date('d/m/Y H:i:s', strtotime($value->created_at));
                 if($value->comissao == null):
                     $comissao[] = 0;
                     $soma[] = 0;
@@ -116,7 +116,7 @@ class vendasController extends Controller
             $nome[] = $value->nome;
             $email[] = $value->email;
             $valor_venda[] = $value->valor_venda;
-            $data[] = $value->created_at;
+            $data[] = date('d/m/Y H:i:s', strtotime($value->created_at));
             if($value->comissao == null):
                 $comissao[] = 0;
             else: 

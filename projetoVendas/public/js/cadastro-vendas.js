@@ -108,4 +108,4 @@ $(document).on('click','#btn-nova-venda',function(){
                 cadastrar(valor_venda,id_vendedor)
             }
         })   
-     })   
+})   

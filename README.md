@@ -1,5 +1,5 @@
-# API CADASTRO VENDAS
-## API para cadastro de vendas para vendedores que calcula a comissão das vendas
+# SISTEMA CADASTRO VENDAS
+## Sistema para cadastro de vendas para vendedores que calcula a comissão das vendas
 
 ### Tecnologias usadas
 * PHP
