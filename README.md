@@ -1,6 +1,5 @@
 # SISTEMA CADASTRO VENDAS
-## Sistema para cadastro de vendas para vendedores que calcula a comissão das vendas e envia um relatório com a soma de
-## todas as vendas efetuadas no dia.
+## Sistema para cadastro de vendas para vendedores que calcula a comissão das vendas e envia um relatório com a soma de todas as vendas efetuadas no dia.
 
 ### Tecnologias usadas
 * PHP
