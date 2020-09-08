@@ -9,6 +9,7 @@ function listaVendas(user){
                 console.log(data.count+' ola')
                 // CONSTROI A TABELA PARA LISTAR OS VENDEDORES
                 html = '<div class="col-md-8">'
+                html += '<h5>Vendas</h5>'
                 html += '<table class="table table-dark">'
                 html +='<thead>'
                 html +='<tr>'

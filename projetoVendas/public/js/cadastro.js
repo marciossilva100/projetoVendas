@@ -2,7 +2,7 @@
 $('#btn-cadastrar').click(function(){
 
     // MONTA O FORMULARIO DE CADASTRO
-    html ='<div style="width:300px;margin:0 auto">'
+    html ='<div class="text-light bg-dark" style="width:300px;margin:0 auto;padding: 20px;">'
     html += '<form action="javascript:void(0)" id="form-validation">'
     html +='<label>Nome</label>'
     html +='<input type="text" name="nome" class="form-control" required id="nome">'

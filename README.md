@@ -26,4 +26,5 @@
 
 ### Efetuar comando 'php artisan migrate' na pasta do projeto para criar as tabelas
 ### Efetuado todo o procedimento executar o comando php artisan serve para visualizar a aplicação no navegador caso seja localhost
+### O arquivo na views 'enviar-email' deve ser executado numa cron job no ultimo horario do dia para enviar o relatorio diario
 

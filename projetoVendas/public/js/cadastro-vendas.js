@@ -37,7 +37,8 @@ $(document).on('click','#btn-nova-venda',function(){
             statusCode:{
                 200: function(data){
                     // MONTA O HTML
-                    html ='<div class="col-md-5">'
+                    html ='<div class="col-md-5 bg-dark text-light" style="padding:20px">'
+                    html +='<h5>Cadastrar venda</h5><br>'
                     html += '<form action="javascript:void(0)">'
                     html += '<div class="row">'
                     html += '<div class="col">'

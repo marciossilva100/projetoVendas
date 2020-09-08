@@ -10,6 +10,7 @@ $(document).on('click','#btn-listar-vendedores',function(){
                     console.log(data.count)
                     // CONSTROI A TABELA PARA LISTAR OS VENDEDORES
                     html = '<div class="col-md-8">'
+                    html += '<h5>Lista de vendedores</h5>'
                     html += '<table class="table table-dark">'
                     html +='<thead>'
                     html +='<tr>'

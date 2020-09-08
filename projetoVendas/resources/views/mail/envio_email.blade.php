@@ -1,1 +1,1 @@
-<h5>Total de vendas do dia foi de {{$total->total}}</h5>
+<h4>Total de vendas do dia {{date('d/m/Y')}} foi de R$ {{$total->total ?? '0.00'}}</h4>

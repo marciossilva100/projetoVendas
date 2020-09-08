@@ -29,17 +29,21 @@ class SendMailRelatorio extends Mailable
      */
     public function build()
     {
+        // $dateNow = date("Y-m-d");
         $query = DB::table('vendedores as v1')
                     ->join('vendas as v2','v1.id','=','v2.id_vendedor')
                     ->select(DB::raw("SUM(v2.valor_venda) as total"))
+                    ->whereDate('v2.created_at','=', date('Y-m-d'))
                     ->get();
 
                     foreach($query as $value){
                         $total = $value;
                     }
+
+                    // if(!isset($total) || $total == "") $total = 0.00;
                     
-        $this->subject('Relatório de vendas');
-        $this->from('marciosunico18@gmail.com','Relatorio vendas');
+        $this->from('seuemail@yteste.com','Relatorio diário');
+        $this->subject('Relatório diario de vendas');
         $this->to($this->user->email,$this->user->name);
         return $this->view('mail.envio_email',[
             'user'=>$this->user,
