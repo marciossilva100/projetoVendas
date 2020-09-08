@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Http\RedirectResponse;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,14 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+// PAGINA PRINCIPAL 
 Route::get('vendas', function(){
     return view('view_vendas');
 });
 
+Route::get('/', function () {
+    return redirect('vendas');
+});
+
+// ENVIO DE EMAIL
 Route::get('enviar-email', function(){
     $user = new stdClass;
     $user->name = 'Marcios Silva';

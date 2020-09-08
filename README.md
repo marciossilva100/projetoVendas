@@ -13,7 +13,8 @@
 ### Configurações para instalação
 
 * Instalação do laravel 
-* Configurar o arquivo env para recebimento dos emails nas linhas abaixo.
+* Configurar o arquivo web.php a Route de envio de email.
+* Criar e configurar o arquivo .env nas linhas abaixo para recebimento dos emails.
 
 MAIL_MAILER=smtp  
 MAIL_HOST=smtp.mailtrap.io  

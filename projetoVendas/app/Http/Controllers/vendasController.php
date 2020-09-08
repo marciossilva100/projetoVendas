@@ -19,7 +19,7 @@ class vendasController extends Controller
 
     public function index(Request $request)
     {
-    //    $busca = DB::select('SELECT v1.id,v1.email,v1.nome,v2.valor_venda,v2.created_at,v2.comissao,SUM(v2.comissao) as soma FROM vendedores AS v1 INNER JOIN vendas v2 ON(v1.id=v2.id_vendedor) GROUP BY v1.email');
+
             $busca = DB::table('vendedores as v1')
                     ->leftjoin('vendas as v2','v1.id','=','v2.id_vendedor')
                     ->select('v1.id','v1.email','v1.nome','v2.comissao','v2.valor_venda','v2.created_at',DB::raw("SUM(v2.comissao) as soma"))
@@ -136,21 +136,4 @@ class vendasController extends Controller
 
     }
 
-
-    public function edit($id)
-    {
-        //
-    }
-
- 
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
- 
-    public function destroy($id)
-    {
-        //
-    }
 }
