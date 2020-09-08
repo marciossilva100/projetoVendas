@@ -79,9 +79,10 @@ $(document).on('click','#btn-nova-venda',function(){
             }
          })
 
-        // EVITA CLIQUE DUPLO
+        
         $(document).one('click','#btn-enviar-venda',function(){
-        // $('#btn-enviar-venda').one('click', function (e){
+            // EVITA CLIQUE DUPLO
+            $(this).prop("disabled", true )
 
             id_vendedor = $('#select-vendedor').val()
             valor_venda = $('#valor-venda').val()
@@ -90,6 +91,7 @@ $(document).on('click','#btn-nova-venda',function(){
 
             console.log(valor_venda)
             console.log(valor_venda+' '+id_vendedor)
+            
             // VALIDAÇÕES
             if(valor_venda == '' ){
                 $('#info-valor').empty()
@@ -107,6 +109,8 @@ $(document).on('click','#btn-nova-venda',function(){
 
             if(id_vendedor != 0 && valor_venda != ''){
                 cadastrar(valor_venda,id_vendedor)
+                $(this).prop("disabled", false )
+
             }
         })   
 })   
