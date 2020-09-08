@@ -23,7 +23,7 @@ Route::get('vendas', function(){
 
 Route::get('enviar-email', function(){
     $user = new stdClass;
-    // $user->name = 'Marcios Silva';
+    $user->name = 'Marcios Silva';
     $user->email = 'seuemail@yteste.com';
 
     // descomentar esta linha comentar a linha de enviar email abaixo para teste
