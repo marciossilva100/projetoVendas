@@ -8,7 +8,6 @@
 * CSS
 * BANCO DE DADOS SQL
 * JAVASCRIPT
-* API REST
 
 ### Configurações para instalação
 
